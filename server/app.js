@@ -8,7 +8,7 @@ const path = require('path');
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
-const frontendDirPath = path.join(__dirname, "./UI");
+const frontendDirPath = path.join(__dirname, "../UI");
 app.use(express.static(frontendDirPath));
 
 // A unique identifier for the given session
